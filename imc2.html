@@ -1,0 +1,34 @@
+<meta charset = "UTF-8">
+
+<script>
+	
+function pulaLinha () {
+	document.write("<br><br>");
+}
+
+function mostra (frase) {
+	document.write (frase);
+	pulaLinha ();
+}
+
+function titula (titu) {
+	document.write ("<h3> ## Bóra! Começando o programa!! ## </h3>");
+	pulaLinha;
+	pulaLinha;
+}
+
+titula ();
+
+function calculaImc (peso, altura) {
+	var imc = (peso / (altura*altura));
+	return imc;
+}
+
+var imcVerbo = calculaImc (150, 1.7);
+var imcShina = calculaImc (106, 1.77);
+
+mostra ("O IMC do Shinês é: " + Math.round(imcShina));
+mostra (Math.round(imcVerbo));
+
+
+</script>

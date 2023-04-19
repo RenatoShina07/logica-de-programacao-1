@@ -1,0 +1,37 @@
+<meta charset = "UTF-8">
+
+<script>
+	
+function pulaLinha () {
+	document.write("<br><br>");
+}
+
+function mostra (frase) {
+	document.write (frase);
+	pulaLinha ();
+}
+
+function titula (titu) {
+	document.write ("<h3> ## Bóra! Começando o programa!! ## </h3>");
+	pulaLinha;
+	pulaLinha;
+}
+
+titula ();
+
+
+var totFami = parseInt(prompt("Qual sua quantidade de familiares?"));
+var quant = 1;
+var somaIdades = 0;
+
+while (quant <= totFami) {
+	var idade = parseInt(prompt("Informe a idade do familiar."));
+	somaIdades = somaIdades + idade;
+	quant++;
+}
+var media = somaIdades / totFami;
+mostra ("A média das idades é: " + media);
+mostra ("FIM");
+
+
+</script>

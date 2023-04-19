@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+		document.write("<br>")
+			}
+	
+	function titulo() {
+		document.write("<h2>## O problema das gerações ##</h2>")
+	}
+
+	function mostra(frase) {
+		document.write(frase)
+		pulaLinha()
+	}
+
+	var ano = 2022;
+	
+	var brasil = 1500;
+
+	var difAnos = ano - brasil;
+
+	var gerac = Math.round(difAnos/28);
+
+	titulo();
+
+	mostra("Estamos no ano de " + ano);
+
+	mostra("Já se fazem " + difAnos + " anos que os portugueses chegaram ao Brasil.");
+
+	mostra("Uma geração dura aproximadamente 28 anos.");
+
+	mostra("Já se passaram " + gerac + " gerações, desde quando o Brasil foi descoberto.");
+
+</script>

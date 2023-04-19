@@ -1,0 +1,31 @@
+<meta charset = "UTF-8">
+
+<script>
+	
+function pulaLinha () {
+	document.write("<br><br>");
+}
+
+function mostra (frase) {
+	document.write (frase);
+	pulaLinha ();
+}
+
+function titula (titu) {
+	document.write ("<h3> ## Bóra! Começando o programa!! ## </h3>");
+	pulaLinha;
+	pulaLinha;
+}
+
+titula ();
+
+function calculaImc (peso, altura) {
+	var imc = (peso / (altura*altura));
+	mostra ("O IMC calculado é: " + imc);
+}
+
+calculaImc (150, 1.7);
+calculaImc (106, 1.77);
+
+
+</script>
